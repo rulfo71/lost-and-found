@@ -8,8 +8,9 @@ import {
 import { MapPin, Calendar, User } from "lucide-react";
 import { Badge } from "@/app/components/ui/badge";
 import { cn } from "@/lib/tailwind/utils";
+import { LostFoundObject } from "../types/object";
 
-export function ObjectCard({ object }: { object: any }) {
+export function ObjectCard({ object }: { object: LostFoundObject }) {
   return (
     <Card className="p-4 space-y-2 border border-zinc-200 shadow-sm">
       <CardHeader>
@@ -38,7 +39,7 @@ export function ObjectCard({ object }: { object: any }) {
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Calendar className="h-4 w-4" />
-            {new Date(object.event_date).toLocaleDateString("es-ES")}
+            {new Date(object.event_date ?? "").toLocaleDateString("es-ES")}
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <User className="h-4 w-4" />

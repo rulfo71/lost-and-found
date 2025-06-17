@@ -12,9 +12,10 @@ import {
 } from "@/app/components/ui/tabs";
 import { supabase } from "@/lib/supabase";
 import { cn } from "@/lib/tailwind/utils";
+import { LostFoundObject } from "../types/object";
 
 export function ObjectList({ refreshTrigger }: { refreshTrigger: any }) {
-  const [items, setItems] = useState<any[]>([]);
+  const [items, setItems] = useState<LostFoundObject[]>([]);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
