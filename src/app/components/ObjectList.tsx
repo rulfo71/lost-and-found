@@ -14,7 +14,7 @@ import { supabase } from "@/lib/supabase";
 import { cn } from "@/lib/tailwind/utils";
 import { LostFoundObject } from "../types/object";
 
-export function ObjectList({ refreshTrigger }: { refreshTrigger: any }) {
+export function ObjectList({ refreshTrigger }: { refreshTrigger: boolean }) {
   const [items, setItems] = useState<LostFoundObject[]>([]);
   const [search, setSearch] = useState("");
 
