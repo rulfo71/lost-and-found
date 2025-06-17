@@ -19,7 +19,7 @@ export default function HomePage() {
     <main className="max-w-3xl mx-auto p-4 space-y-8 bg-white min-h-screen min-w-screen">
       <div className="text-center space-y-1">
         <h1 className="text-2xl font-bold text-zinc-900">
-          Objetos Perdidos y Encontrados
+          Objetos Perdidos y Encontrados en Bari
         </h1>
         <p className="text-zinc-600">
           Ayudamos a reunir personas con sus objetos perdidos
